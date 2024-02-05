@@ -12,7 +12,7 @@ import java.util.UUID
  * @param status the status of the task, default is New.
  * @param id the unique ID of the task, default is a random UUID.
  */
-class Task(val description: String, val dueDate: java.time.LocalDate, val priority: TaskPriority.TaskPriority, val status: TaskStatus = TaskStatus.New, private val id: UUID = UUID.randomUUID()) {
+class Task(val description: String, val dueDate: java.time.LocalDate, val priority: TaskPriority.TaskPriority = TaskPriority.Low, val status: TaskStatus = TaskStatus.New, private val id: UUID = UUID.randomUUID()) {
 
   /**
    * Get the ID of the task.
