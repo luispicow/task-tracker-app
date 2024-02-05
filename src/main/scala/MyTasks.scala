@@ -9,7 +9,7 @@ import java.util.UUID
  * @param username the name of the user.
  * @param tasks the list of tasks.
  */
-class MyTasks(username: String, tasks: List[Task] = List()) {
+class MyTasks(val username: String, val tasks: List[Task] = List()) {
 
   /**
    * Add a new task to the user's tasks.
